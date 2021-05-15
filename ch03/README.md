@@ -4,7 +4,7 @@ Most of the examples assume mountebank is running on port 2525. You can start it
 separate terminal by running
 
 ````
-mb &
+yarn mb &
 ````
 
 The examples also assume you have access to `curl`, which means you're running Mac, Linux,
@@ -91,7 +91,7 @@ or by typing `mb stop` in a separate terminal that's in the same directory.
 
 ````
 # Restart mountebank using the config file
-mb restart --configfile configfiles/inventory.ejs
+yarn mb restart --configfile configfiles/inventory.ejs
 
 # Call the imposter 7 times to see it cycle through responses
 for (( i = 0; i < 7; i++ )); do
@@ -107,7 +107,7 @@ directory. Kill mountebank before running:
 
 ````
 # Restart mountebank using the config file
-mb restart --configfile configfiles/imposters.ejs
+yarn mb restart --configfile configfiles/imposters.ejs
 
 # Verify inventory imposter
 curl -k -i https://localhost:3000/
