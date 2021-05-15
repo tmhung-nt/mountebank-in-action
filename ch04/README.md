@@ -96,6 +96,9 @@ curl -i "http://localhost:3000/identities?q=Frank&q=Georgia&q=Doctor"
 # Should match deepEquals predicate
 curl -i "http://localhost:3000/identities?q=Frank&q=Georgia"
 
+# Should match default response
+ curl -i "http://localhost:3000/identities?q=Frank"
+ 
 mb stop
 ````
 
