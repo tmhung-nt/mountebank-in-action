@@ -1,0 +1,21 @@
+{
+  "name": "ch05",
+  "version": "1.0.0",
+  "description": "The examples below require _two_ imposters: the imposter with the proxy response (which is what the chapter is about), and the origin server that we're proxying to. If you look at the JSON files, the origin server is listed first on port 8080 and the proxy imposter second on port 3000.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "mountebank": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mb": "mb",
+    "config": "mb restart --configfile examples/proxy-for-public-apis.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

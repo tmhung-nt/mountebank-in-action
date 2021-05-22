@@ -250,3 +250,25 @@ curl -i http://localhost:3000/
 
 mb stop
 ````
+
+
+## online example
+https://developers.ascendcorp.com/creating-the-imposter-configuration-of-mountebank-using-the-recorded-stub-92354ae2f63a
+
+### Step 1: start mb
+`npm run mb`
+### Step 2: create new proxy imposter
+curl -i -d@examples/basic-inventory.json http://localhost:2525/imposters
+
+### Free Public APIs
+https://github.com/davemachado/public-api
+
+#### Call to real service
+curl -i https://api.publicapis.org/health
+curl -i https://api.publicapis.org/categories
+curl -i https://api.publicapis.org/entries
+
+#### Step 3 - Call to imposter proxy to save responses
+curl http://localhost:9906/health
+curl http://localhost:9906/categories
+curl http://localhost:9906/entries
