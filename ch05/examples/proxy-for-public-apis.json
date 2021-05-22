@@ -1,0 +1,28 @@
+{
+   
+  "port":9906,
+  "protocol":"http",
+  "recordRequests": true,
+  "stubs":[
+     {
+        "responses":[
+           {
+              "proxy":{
+                 "to":"https://api.publicapis.org/",
+                 "mode":"proxyAlways",
+                 "predicateGenerators":[
+                    {
+                       "matches":{
+                          "headers":true,
+                          "method":true,
+                          "path":true
+                       },
+                       "caseSensitive":true
+                    }
+                 ]
+              }
+           }
+        ]
+     }
+  ]
+}

@@ -13,7 +13,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mb": "mb",
-    "config": "mb restart --configfile examples/proxy-for-public-apis.json"
+    "config": "mb restart --configfile examples/proxy-for-public-apis.json",
+    "save": "mb save --savefile proxy-stub.json --removeProxies"
   },
   "keywords": [],
   "author": "",
