@@ -3,20 +3,9 @@
     {
       "protocol": "http",
       "port": 9906,
-      "recordRequests": true,
       "stubs": [
         {
           "predicates": [
-            {
-              "caseSensitive": true,
-              "deepEquals": {
-                "headers": {
-                  "Host": "localhost:9906",
-                  "User-Agent": "curl/7.68.0",
-                  "Accept": "*/*"
-                }
-              }
-            },
             {
               "caseSensitive": true,
               "deepEquals": {
@@ -56,16 +45,6 @@
             {
               "caseSensitive": true,
               "deepEquals": {
-                "headers": {
-                  "Host": "localhost:9906",
-                  "User-Agent": "curl/7.68.0",
-                  "Accept": "*/*"
-                }
-              }
-            },
-            {
-              "caseSensitive": true,
-              "deepEquals": {
                 "method": "GET"
               }
             },
@@ -100,16 +79,6 @@
         },
         {
           "predicates": [
-            {
-              "caseSensitive": true,
-              "deepEquals": {
-                "headers": {
-                  "Host": "localhost:9906",
-                  "User-Agent": "curl/7.68.0",
-                  "Accept": "*/*"
-                }
-              }
-            },
             {
               "caseSensitive": true,
               "deepEquals": {

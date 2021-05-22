@@ -14,6 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "mb": "mb",
     "config": "mb restart --configfile examples/proxy-for-public-apis.json",
+    "proxy:stubs": "mb restart --configfile proxy-stub.json",
     "save": "mb save --savefile proxy-stub.json --removeProxies"
   },
   "keywords": [],
